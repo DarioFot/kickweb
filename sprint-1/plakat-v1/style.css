@@ -1,0 +1,29 @@
+@font-face {
+    font-family: Posterfont;
+    src: url(fonts/c7988a4e3e8cc0b7152a121298699ed0.woff2);
+}
+body {
+    font-family: Posterfont;
+}
+
+.titel{
+    font-size: 130px;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+}
+
+.subtitel {
+    font-size: 30px;
+}
+
+.arrow{
+font-size: 250px;    
+}
+
+.lead {
+    font-size: 20px;
+}
+
+.ltext {
+  font-size: 15px;  
+}
