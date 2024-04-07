@@ -85,54 +85,59 @@ document.addEventListener('DOMContentLoaded', function () {
         
     });
 
-    //Verlinkungen
-    const child1 = document.querySelector('.child-1');
+  //Verlinkungen
+  const child1 = document.querySelector('.child-1');
 
-    child1.addEventListener('click', function() {
-        window.location.href = 'https://www.hslu.ch/de-ch/';
-    });
+  child1.addEventListener('click', function() {
+      window.location.href = 'https://www.hslu.ch/de-ch/';
+  });
 
-    const child2 = document.querySelector('.child-2');
+  const child2 = document.querySelector('.child-2');
 
-    child2.addEventListener('click', function() {
-        window.location.href = 'https://dariofot.github.io/kickweb/';
-    });
+  child2.addEventListener('click', function() {
+      window.location.href = 'https://dariofot.github.io/kickweb/';
+  });
 
-    const item2 = document.querySelector('.item-2');
+  const item2 = document.querySelector('.item-2');
 
-    item2.addEventListener('click', function() {
-        window.location.href = 'https://de.wikipedia.org/wiki/2024';
-    });
+  item2.addEventListener('click', function() {
+      window.location.href = 'https://de.wikipedia.org/wiki/2024';
+  });
 
 
-    const item3 = document.querySelector('.item-3');
+  const item3 = document.querySelector('.item-3');
 
-    item3.addEventListener('click', function() {
-        window.location.href = 'https://www.linkedin.com/in/dario-foti-b858822b4/';
-    });
+  item3.addEventListener('click', function() {
+      window.location.href = 'https://www.linkedin.com/in/dario-foti-b858822b4/';
+  });
 
-    const item4 = document.querySelector('.item-4');
+  const item4 = document.querySelector('.item-4');
 
-    item4.addEventListener('click', function() {
-        window.location.href = 'https://www.hslu.ch/de-ch/informatik/studium/bachelor/digital-ideation/?gad_source=1&gclid=Cj0KCQjw2a6wBhCVARIsABPeH1vHm886GJB43aHSpMEz2Y14o3g9e0vdi27BLlH-fCBpa6XVfgIA_wIaAhcYEALw_wcB&gclsrc=aw.ds';
-    });
+  item4.addEventListener('click', function() {
+      window.location.href = 'https://www.hslu.ch/de-ch/informatik/studium/bachelor/digital-ideation/?gad_source=1&gclid=Cj0KCQjw2a6wBhCVARIsABPeH1vHm886GJB43aHSpMEz2Y14o3g9e0vdi27BLlH-fCBpa6XVfgIA_wIaAhcYEALw_wcB&gclsrc=aw.ds';
+  });
 
-    const item5 = document.querySelector('.item-5');
+  const item5 = document.querySelector('.item-5');
 
-    item5.addEventListener('click', function() {
-        window.location.href = 'https://www.instagram.com/dario.psd/';
-    });
+  item5.addEventListener('click', function() {
+      window.location.href = 'https://www.instagram.com/dario.psd/';
+  });
 
-    const footchildmini2 = document.querySelector('.footchildmini-2');
+  const footchildmini2 = document.querySelector('.footchildmini-2');
 
-    footchildmini2.addEventListener('click', function() {
-        window.location.href = 'https://www.hslu.ch/de-ch/informatik/campus/';
-    });
+  footchildmini2.addEventListener('click', function() {
+      window.location.href = 'https://www.hslu.ch/de-ch/informatik/campus/';
+  });
 
-    const footchildmini3 = document.querySelector('.footchildmini-3');
+  const footchildmini3 = document.querySelector('.footchildmini-3');
 
-    footchildmini3.addEventListener('click', function() {
-        window.location.href = 'https://github.com/digitalideation/KickWeb2024/wiki';
-    });
+  footchildmini3.addEventListener('click', function() {
+      window.location.href = 'https://github.com/digitalideation/KickWeb2024/wiki';
+  });
 
+  const footchildmini4 = document.querySelector('.footchildmini-4');
+
+  footchildmini4.addEventListener('click', function() {
+      window.location.href = 'https://github.com/DarioFot/kickweb';
+  });
 });

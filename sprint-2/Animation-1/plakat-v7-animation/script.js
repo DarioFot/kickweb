@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+
     //drehung pfeil bei klick
     const pfeil = document.querySelector('.pfeil');
     let rotation = 0;
@@ -29,29 +30,38 @@ document.addEventListener('DOMContentLoaded', function () {
     let isHovered = false;
     let kreisRotation = 0; // Aktuelle Rotationsposition für den .kreis
 
-    kreisElement.addEventListener('mouseenter', function () {
-        if (!isHovered) {
-            isHovered = true;
-            // Animation mit der gespeicherten Rotationsposition fortsetzen
-            kreisElement.style.animation = `rotateCircle 8s linear infinite`;
-            if (!hoverSound.paused) {
-                hoverSound.currentTime = audioStartTime;
-            } else {
-                hoverSound.play();
-            }
+    function startKreisRotation() {
+        isHovered = true;
+        // Animation mit der gespeicherten Rotationsposition fortsetzen
+        kreisElement.style.animation = `rotateClockwise 8s linear infinite ${kreisRotation}s`;
+        if (!hoverSound.paused) {
+            hoverSound.currentTime = audioStartTime;
+        } else {
+            hoverSound.play();
         }
-    });
+    }
 
-    // Rotation von .kreis
-    kreisElement.addEventListener('mouseleave', function () {
+    function stopKreisRotation() {
         isHovered = false;
         hoverSound.pause();
         audioStartTime = hoverSound.currentTime;
         // Aktuelle Rotationsposition speichern
         const computedStyle = window.getComputedStyle(kreisElement);
-        kreisRotation = parseFloat(computedStyle.getPropertyValue('animation-duration')) || 0;
+        const animationDuration = parseFloat(computedStyle.getPropertyValue('animation-duration')) || 0;
+        const animationIterationCount = parseFloat(computedStyle.getPropertyValue('animation-iteration-count')) || 0;
+        kreisRotation = (animationDuration * animationIterationCount) % 8; // 8s ist die Dauer der Animation
         kreisElement.style.animation = 'none'; // Animation stoppen
-        kreisElement.style.transform = `rotate(${kreisRotation}deg)`; // Kreis auf aktuelle Position setzen
+    }
+
+    kreisElement.addEventListener('mouseenter', startKreisRotation);
+
+    // Rotation von .kreis
+    kreisElement.addEventListener('mouseleave', stopKreisRotation);
+
+    kreisElement.addEventListener('animationend', function () {
+        if (!isHovered) {
+            kreisElement.style.animationPlayState = 'paused';
+        }
     });
 
     const customCursor = document.getElementById('custom-cursor');
@@ -72,50 +82,56 @@ document.addEventListener('DOMContentLoaded', function () {
     //Verlinkungen
     const child1 = document.querySelector('.child-1');
 
-    child1.addEventListener('click', function () {
+    child1.addEventListener('click', function() {
         window.location.href = 'https://www.hslu.ch/de-ch/';
     });
 
     const child2 = document.querySelector('.child-2');
 
-    child2.addEventListener('click', function () {
+    child2.addEventListener('click', function() {
         window.location.href = 'https://dariofot.github.io/kickweb/';
     });
 
     const item2 = document.querySelector('.item-2');
 
-    item2.addEventListener('click', function () {
+    item2.addEventListener('click', function() {
         window.location.href = 'https://de.wikipedia.org/wiki/2024';
     });
 
 
     const item3 = document.querySelector('.item-3');
 
-    item3.addEventListener('click', function () {
+    item3.addEventListener('click', function() {
         window.location.href = 'https://www.linkedin.com/in/dario-foti-b858822b4/';
     });
 
     const item4 = document.querySelector('.item-4');
 
-    item4.addEventListener('click', function () {
+    item4.addEventListener('click', function() {
         window.location.href = 'https://www.hslu.ch/de-ch/informatik/studium/bachelor/digital-ideation/?gad_source=1&gclid=Cj0KCQjw2a6wBhCVARIsABPeH1vHm886GJB43aHSpMEz2Y14o3g9e0vdi27BLlH-fCBpa6XVfgIA_wIaAhcYEALw_wcB&gclsrc=aw.ds';
     });
 
     const item5 = document.querySelector('.item-5');
 
-    item5.addEventListener('click', function () {
+    item5.addEventListener('click', function() {
         window.location.href = 'https://www.instagram.com/dario.psd/';
     });
 
     const footchildmini2 = document.querySelector('.footchildmini-2');
 
-    footchildmini2.addEventListener('click', function () {
+    footchildmini2.addEventListener('click', function() {
         window.location.href = 'https://www.hslu.ch/de-ch/informatik/campus/';
     });
 
     const footchildmini3 = document.querySelector('.footchildmini-3');
 
-    footchildmini3.addEventListener('click', function () {
+    footchildmini3.addEventListener('click', function() {
         window.location.href = 'https://github.com/digitalideation/KickWeb2024/wiki';
+    });
+
+    const footchildmini4 = document.querySelector('.footchildmini-4');
+
+    footchildmini4.addEventListener('click', function() {
+        window.location.href = 'https://github.com/DarioFot/kickweb';
     });
 });
