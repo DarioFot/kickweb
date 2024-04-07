@@ -1,0 +1,4 @@
+window.onload = function () {
+}
+const firstDynamicElement = document.createElement("div");
+main.appendChild(firstDynamicElement);

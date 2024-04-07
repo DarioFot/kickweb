@@ -1,0 +1,383 @@
+*,
+*::before,
+*::after {
+  /* Universal-Stile hier */
+}
+body {
+  padding: -1;
+  cursor: none;
+}
+
+@font-face {
+  font-family: Posterfont;
+  src: url(fonts/c7988a4e3e8cc0b7152a121298699ed0.woff2);
+}
+#custom-cursor {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  font-family: Posterfont;
+  color: white;
+  text-indent: 35px;
+  font-size: 25px;
+  background-image: url(cursor-01.svg);
+  z-index: 1;
+}
+#dario-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Bild proportional im Container füllen */
+  object-position: center; /* Bild im Container zentrieren */
+}
+
+
+::selection {
+  color: #DB0034;
+  background-color: transparent
+}
+
+@keyframes scrollBannerhigh {
+  0% {
+    transform: translateY(-100%);
+  }
+  70% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+  
+}
+
+@keyframes scrollBanner {
+  0% {
+    transform: translateX(-100%);
+  }
+  70% {
+    transform: translateX(0%);
+  }
+  80% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes rotateClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.plakat {
+  height: 90vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  white-space: nowrap;
+  font-family: Posterfont;
+  padding: 1rem;
+
+}
+
+.container1 {
+  width: 100vw;
+  height: 50vw;
+  margin: 0 auto;
+  font-family: Posterfont;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: center;
+  min-height: 100%;
+  background-color: gray;
+}
+
+.item {
+  writing-mode: sideways-rl;
+  transition: font-size 0.3s ease-out;;
+}
+
+.item-2,
+.item-3,
+.item-5 {
+  border-top: 1px solid black;
+  padding-top: 1vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 1vw;
+  font-size: 6.75vw;
+  flex-shrink: 1;
+  border-left: 1px solid black;
+  display: flex;
+  align-items: flex-end;
+  animation: scrollBannerhigh 2s ease-in;
+  background-color: white;
+}
+.item-3 {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scrollBannerhigh 2.5s ease-in ;
+}
+.item-4 {
+  border-top: 1px solid black;
+  padding-top: 1vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 1vw;
+  padding-bottom: 1.25vw;
+  font-size: 6.75vw;
+  flex-shrink: 1;
+  border-left: 1px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scrollBannerhigh 2.6s ease-in ;
+  background-color: white;
+}
+
+.item-5 {
+  border-top: 1px solid black;
+  padding-top: 1vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 1vw;
+  font-size: 6.75vw;
+  flex-shrink: 1;
+  justify-content: end;
+  border-left: 1px solid black;
+  display: flex;
+  align-items: flex-end;
+  animation: scrollBannerhigh 2s ease-in;
+  background-color: white;
+}
+.item-5:hover {
+  background-color:rgb(141, 233, 113);
+  font-size: 7vw;
+  filter: drop-shadow(10 10 10);
+
+}
+.item-1 {
+  flex-grow: 1;
+  display: flex;
+  background-clip: content-box, padding-box;
+}
+
+.item-2 {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+.item-2:hover {
+  background-color:rgb(141, 233, 113);
+  font-size: 7vw;
+  transition: transform 1s ease-in-out;
+}
+
+.item-3 {
+  text-align: end;
+  justify-content: end;
+}
+.item-3:hover {
+ background-color:rgb(141, 233, 113);
+ font-size: 7vw;
+ transition: transform 1s ease-in-out;
+}
+
+.item-4:hover {
+ background-color:rgb(141, 233, 113);
+ font-size: 7vw;
+ transition: transform 0.5s ease-in;
+}
+
+.subitem-1 {
+  height: fit-content;
+}
+.subitem-1:hover {
+ background-color:rgb(141, 233, 113);
+
+}
+.subitem-2 {
+  text-align: end;
+  height: fit-content;
+}
+
+.subitem-2:hover {
+ background-color:rgb(141, 233, 113);
+}
+
+.child {
+  writing-mode: horizontal-tb;
+  border-top: 4px;
+  font-size: 3.5vw;
+  border-top: 1px solid black;
+  overflow: hidden;
+  background-color: white;
+  transition: font-size 0.3s ease-out;
+
+}
+.child:hover {
+  background-color: rgb(141, 233, 113);
+  font-size: 3.7vw;
+  transition: 0s;
+
+}
+
+.child-1 {
+  min-height: 10%;
+  animation: scrollBanner 1.9s ease-in;
+  transition: font-size 0.3s ease-out
+}
+
+
+.child-2 {
+  min-height: 10%;
+  background-color: white;
+  animation: scrollBanner 2.1s ease-in;
+  overflow: hidden;
+}
+
+.child-3 {
+  min-height: 80%;
+  background-color: white;
+  animation: scrollBanner 2.4s ease-in;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid black;
+
+}
+
+.pfeil {
+  margin-top: 5vw;
+  margin-left: 1vw;
+  width: 30vw;
+  
+}
+
+.footer {
+  display: flex;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid black;
+  font-size: 1vw;
+  min-height: 30%;
+  background-color: white;
+
+}
+
+.footchild {
+  display: flex;
+  flex-grow: 1;
+  background-color: white;
+}
+
+.footchildmini {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  padding-top: 1rem;
+  background-color: white;
+  transition: font-size 0.3s ease-out}
+  
+
+.footchildmini-1 {
+  flex-direction: column;
+  padding-left: 1vw;
+}
+
+.kreis {
+  margin-top: 1.5vw;
+  width: 8vw;
+}
+
+
+
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.footchildmini-1 {
+  animation: scrollBannerhigh 1s ease-in;
+  transition: font-size 0.3s ease-out
+}
+
+.footchildmini-2 {
+  flex-direction: column;
+  border-left: 1px solid black;
+  padding-left: 1vw;
+  padding-bottom: 1vw;
+  justify-content: space-between;
+  animation: scrollBannerhigh 1.2s ease-in;
+
+}
+
+.footchildmini-3 {
+  writing-mode: sideways-rl;
+  font-size: 0.7vw;
+  padding-right: 1vw;
+  animation: scrollBannerhigh 1.4s ease-in ;
+
+}
+
+.footchildmini-3 {
+  flex-direction: column;
+  border-left: 1px solid black;
+  padding-left: 1vw;
+}
+
+.footchildsmall-3 {
+  font-size: 0.7vw;
+}
+
+.footchildmini-4 {
+  font-size: 0.7vw;
+  border-left: 1px solid black;
+  padding-left: 1vw;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 1vw;
+  padding-right: 1vw;
+  min-width: 34%;
+  display: flex;
+  align-items: flex-end;
+  animation: scrollBannerhigh 1.6s ease-in;
+}
+.footchildmini:hover {
+  transition: 0s;
+}
+
+.footchildmini-1:hover {
+  background-color:rgb(141, 233, 113);
+  font-size: 1.1vw;
+}
+.footchildmini-2:hover {
+  background-color:rgb(141, 233, 113);
+  font-size: 1.1vw;
+}
+.footchildmini-3:hover {
+  background-color:rgb(141, 233, 113);
+  font-size: 0.9vw;
+}
+.footchildmini-4:hover {
+  background-color:rgb(141, 233, 113);
+  font-size: 0.75vw;
+}
+
+.footchildsmall:hover {
+  background-color:rgb(141, 233, 113);}
