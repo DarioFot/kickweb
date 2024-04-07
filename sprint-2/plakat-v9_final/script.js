@@ -26,12 +26,11 @@ document.addEventListener('DOMContentLoaded', function () {
     pfeil.addEventListener('click', function() {
       if (!isClicked) {
         isClicked = true;
-        // Bild nach einer Verzögerung von 500 Millisekunden anzeigen
         setTimeout(function() {
             darioImage.style.display = 'block';
-        }, 500);
+        }, 400);
         pfeil.style.transition = 'transform 0.5s ease-in-out';
-        pfeil.style.transform = 'translateX(-100%)';
+        pfeil.style.transform = 'translateX(-110%)';
       } else {
         isClicked = false;
         darioImage.style.display = 'none'; // Bild ausblenden
@@ -39,6 +38,18 @@ document.addEventListener('DOMContentLoaded', function () {
         pfeil.style.transform = 'translateX(0)';
         customCursor.innerHTML = ""; // Cursor zurücksetzen
       }
+    });
+
+    // Wenn das Bild geklickt wird, setze den Pfeil zurück
+    darioImage.addEventListener('click', function() {
+        isClicked = false;
+        setTimeout(function() {
+            pfeil.style.transition = 'block';
+        }, 400);
+        darioImage.style.display = 'none'; // Bild ausblenden
+        pfeil.style.transition = 'transform 0.5s ease-in-out';
+        pfeil.style.transform = 'translateX(0)';
+        customCursor.innerHTML = ""; // Cursor zurücksetzen
     });
 
     //zoomeffect Hover child-3

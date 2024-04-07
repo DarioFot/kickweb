@@ -22,7 +22,7 @@ body {
   text-indent: 35px;
   font-size: 25px;
   background-image: url(cursor-01.svg);
-  z-index: 1;
+  z-index: 99;
 }
 #dario-image {
   position: absolute;
@@ -32,6 +32,7 @@ body {
   height: 100%;
   object-fit: cover; /* Bild proportional im Container füllen */
   object-position: center; /* Bild im Container zentrieren */
+  z-index:0;
 }
 
 
@@ -243,17 +244,15 @@ body {
   min-height: 80%;
   background-color: white;
   animation: scrollBanner 2.4s ease-in;
-  overflow: hidden;
   position: relative;
   border-bottom: 1px solid black;
-
 }
 
 .pfeil {
   margin-top: 5vw;
   margin-left: 1vw;
   width: 30vw;
-  
+  z-index: 10;
 }
 
 .footer {
