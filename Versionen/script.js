@@ -31,6 +31,10 @@ document.addEventListener('DOMContentLoaded', function () {
         });
          const item7 = document.querySelector('.item-7');
         item7.addEventListener('click', function() {
-            window.location.href = 'https://dariofot.github.io/sprint-2/Animation-1/plakat-v6-animation/plakat-v6';
+            window.location.href = 'https://dariofot.github.io/kickweb/sprint-2/plakat-v6-animation/plakat-v6';
+        });
+        const item8 = document.querySelector('.item-8');
+        item8.addEventListener('click', function() {
+            window.location.href = 'https://dariofot.github.io/kickweb/sprint-2/plakat-v7-animation/plakat-v7';
         });
 });
