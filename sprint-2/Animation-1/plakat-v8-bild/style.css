@@ -148,17 +148,8 @@ body {
 }
 
 .item-5 {
-  border-top: 1px solid black;
-  padding-top: 1vw;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-bottom: 1vw;
-  font-size: 6.75vw;
-  flex-shrink: 1;
+  text-align: end;
   justify-content: end;
-  border-left: 1px solid black;
-  display: flex;
-  align-items: flex-end;
   animation: scrollBannerhigh 2s ease-in;
   background-color: white;
 }
