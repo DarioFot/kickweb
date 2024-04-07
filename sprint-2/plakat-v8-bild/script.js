@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const child2 = document.querySelector('.child-2');
 
   child2.addEventListener('click', function() {
-      window.location.href = 'https://dariofot.github.io/kickweb/';
+      window.location.href = 'https://dariofot.github.io/kickweb/Versionen/Versionen';
   });
 
   const item2 = document.querySelector('.item-2');
