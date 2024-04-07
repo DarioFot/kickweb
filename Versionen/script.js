@@ -1,9 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    const pfeil = document.querySelector('.pfeil');
-    const darioImage = document.getElementById('dario-image');
-    let isClicked = false;
-
     //Custom Cursor
     const customCursor = document.getElementById('custom-cursor');
     document.body.style.cursor = 'none';
@@ -12,36 +8,25 @@ document.addEventListener('DOMContentLoaded', function () {
         customCursor.style.top = e.pageY + 'px';
     });
 
-    //zoomeffect Hover child-3
-    const child3 = document.querySelector('.child-3');
-
-    child3.addEventListener('mouseover', function () {
-        pfeil.style.transition = 'transform 0.0s ease-out';
-        pfeil.style.transform = `scale(1.03) rotate(${rotation}deg)`;
+    // Verlinkungen
+    const item2 = document.querySelector('.item-2');
+    item2.addEventListener('click', function() {
+        window.location.href = 'https://dariofot.github.io/kickweb/sprint-1/plakat-v1/plakat-v1';
     });
-
-    child3.addEventListener('mouseout', function () {
-        pfeil.style.transition = 'transform 0.3s ease-out';
-        pfeil.style.transform = `rotate(${rotation}deg) scale(1)`;
-    });
-
-    
-
-    // Rotation von .kreis
-    kreisElement.addEventListener('mouseleave', function () {
-        isHovered = false;
-        hoverSound.pause();
-        audioStartTime = hoverSound.currentTime;
-    });
-
-    kreisElement.addEventListener('animationend', function () {
-        if (!isHovered) {
-            kreisElement.style.animationPlayState = 'paused';
-        }
-        
-    });
-
-    //Verlinkungen
-    
-
+        const item3 = document.querySelector('.item-3');
+        item3.addEventListener('click', function() {
+            window.location.href = 'https://dariofot.github.io/kickweb/sprint-1/plakat-v2-flex/plakat';
+        });
+        const item4 = document.querySelector('.item-4');
+        item4.addEventListener('click', function() {
+            window.location.href = 'https://dariofot.github.io/kickweb/sprint-1/plakat-v3-flex/plakat';
+        });
+        const item5 = document.querySelector('.item-5');
+        item5.addEventListener('click', function() {
+            window.location.href = 'https://dariofot.github.io/kickweb/sprint-1/plakat_v4/plakat';
+        });
+        const item6 = document.querySelector('.item-6');
+        item6.addEventListener('click', function() {
+            window.location.href = 'https://dariofot.github.io/kickweb/sprint-1/plakat-v5-fluid/plakat';
+        });
 });
