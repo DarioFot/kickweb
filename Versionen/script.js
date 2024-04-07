@@ -29,4 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
         item6.addEventListener('click', function() {
             window.location.href = 'https://dariofot.github.io/kickweb/sprint-1/plakat-v5-fluid/plakat';
         });
+         const item7 = document.querySelector('.item-7');
+        item7.addEventListener('click', function() {
+            window.location.href = 'https://dariofot.github.io/sprint-2/Animation-1/plakat-v6-animation/plakat-v6';
+        });
 });
