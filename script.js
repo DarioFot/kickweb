@@ -101,7 +101,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const child1 = document.querySelector(".child-1");
 
   child1.addEventListener("click", function () {
-    window.location.href = "https://www.hslu.ch/de-ch/";
+    window.location.href =
+      "https://elearning.hslu.ch/ilias/ilias.php?baseClass=ilrepositorygui&ref_id=6109605";
   });
 
   const child2 = document.querySelector(".child-2");
