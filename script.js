@@ -15,25 +15,16 @@ document.addEventListener("DOMContentLoaded", function () {
     customCursor.innerHTML = "CLICK";
   });
 
-  pfeil.addEventListener("mouseout", function () {
-    // Cursor zurücksetzen, wenn der Cursor den Pfeil verlässt
-    if (!isClicked) {
-      customCursor.innerHTML = "";
-    }
-  });
-
   pfeil.addEventListener("click", function () {
     if (!isClicked) {
       isClicked = true;
       setTimeout(function () {
-        //darioImage.style.display = "block";
         darioImage.style.transform = "translateX(0%)";
       }, 400);
       pfeil.style.transition = "transform 0.5s ease-in-out";
       pfeil.style.transform = "translateX(-110%)";
     } else {
       isClicked = false;
-      //darioImage.style.display = "none"; // Bild ausblenden
       darioImage.style.transform = "translateX(100%)";
       pfeil.style.transition = "transform 0.5s ease-in-out";
       pfeil.style.transform = "translateX(0)";
@@ -41,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Wenn das Bild geklickt wird, setze den Pfeil zurück
+  // Wenn das Bild geklickt wird, Pfeil zurück
   darioImage.addEventListener("click", function () {
     isClicked = false;
     setTimeout(function () {
@@ -54,18 +45,18 @@ document.addEventListener("DOMContentLoaded", function () {
     customCursor.innerHTML = ""; // Cursor zurücksetzen
   });
 
-  //zoomeffect Hover child-3
-  const child3 = document.querySelector(".child-3");
+  //zoomeffect Hover child-3 GEHT IN KOMBI MIT BILDANIMATION NICHT
+  /*const child3 = document.querySelector(".child-3");
 
   child3.addEventListener("mouseover", function () {
     pfeil.style.transition = "transform 0.0s ease-out";
-    pfeil.style.transform = `scale(1.03) rotate(${rotation}deg)`;
+    pfeil.style.transform = `scale(1.03)`;
   });
 
   child3.addEventListener("mouseout", function () {
     pfeil.style.transition = "transform 0.3s ease-out";
-    pfeil.style.transform = `rotate(${rotation}deg) scale(1)`;
-  });
+    pfeil.style.transform = `scale(1)`;
+  });*/
 
   // Soundeffekt beim Überfahren von .kreis
   const hoverSound = document.getElementById("hoverSound");

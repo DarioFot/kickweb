@@ -11,6 +11,7 @@ body {
   src: url(fonts/c7988a4e3e8cc0b7152a121298699ed0.woff2);
 }
 #custom-cursor {
+  /*Präsi*/
   position: absolute;
   width: 30px;
   height: 30px;
@@ -37,7 +38,7 @@ body {
 
 ::selection {
   color: #db0034;
-  background-color: transparent;
+  background-color: transparent; /*Präsi*/
 }
 
 @keyframes scrollBannerhigh {
@@ -104,7 +105,7 @@ body {
 
 .item {
   writing-mode: sideways-rl;
-  transition: font-size 0.3s ease-out;
+  transition: font-size 0.3s ease-out; /*Präsi Effekt*/
 }
 
 .item-2,
@@ -208,13 +209,13 @@ body {
   border-top: 1px solid black;
   overflow: hidden;
   background-color: white;
-  transition: font-size 0.3s ease-out;
+  transition: font-size 0.3s ease-out; /* Präsi Effekt */
 }
 
 .child:hover {
   background-color: rgb(141, 233, 113);
   font-size: 3.7vw;
-  transition: 0s;
+  transition: 0s; /* Präsi Effekt */
 }
 
 .child-1 {
