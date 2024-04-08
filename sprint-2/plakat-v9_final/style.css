@@ -1,7 +1,5 @@
-*,
-*::before,
-*::after {
-  /* Universal-Stile hier */
+* {
+  box-sizing: border-box;
 }
 body {
   padding: -1;
@@ -33,6 +31,8 @@ body {
   object-fit: cover; /* Bild proportional im Container füllen */
   object-position: center; /* Bild im Container zentrieren */
   z-index: 0;
+  transition: 0.3s ease-in-out;
+  transform: translateX(100%);
 }
 
 ::selection {
@@ -236,8 +236,7 @@ body {
   min-height: 80%;
   background-color: white;
   animation: scrollBanner 2.4s ease-in;
-  /* position: relative; */
-  border-bottom: 1px solid black;
+  position: relative;
 }
 
 .pfeil {
