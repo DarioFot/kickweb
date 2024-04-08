@@ -1,10 +1,6 @@
-*,
-*::before,
-*::after {
-}
 body {
   cursor: none;
-  background-color: white;
+  background-color: gray;
 }
 
 @font-face {
@@ -148,14 +144,17 @@ body {
   animation: scrollBannerhigh 2.4s ease-in;
 }
 
+.item-10 {
+  animation: scrollBannerhigh 2.6s ease-in;
+}
+
 .subitem-1,
 .subitem-3,
 .subitem-5,
 .subitem-7,
 .subitem-9,
 .subitem-11,
-.subitem-13,
-.subitem-15 {
+.subitem-13 {
   height: fit-content;
   writing-mode: horizontal-tb;
 }

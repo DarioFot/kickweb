@@ -48,4 +48,9 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href =
       "https://dariofot.github.io/kickweb/sprint-2/plakat-v8-bild/plakat";
   });
+  const item10 = document.querySelector(".item-10");
+  item10.addEventListener("click", function () {
+    window.location.href =
+      "https://dariofot.github.io/kickweb/sprint-2/plakat-v9_final/plakat";
+  });
 });
