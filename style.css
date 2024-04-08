@@ -1,8 +1,8 @@
 * {
   box-sizing: border-box;
 }
+
 body {
-  padding: -1;
   cursor: none;
 }
 
@@ -28,8 +28,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Bild proportional im Container füllen */
-  object-position: center; /* Bild im Container zentrieren */
+  object-fit: cover;
+  object-position: center;
   z-index: 0;
   transition: 0.3s ease-in-out;
   transform: translateX(100%);
@@ -80,7 +80,6 @@ body {
 
 .plakat {
   height: 90vh;
-  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -129,33 +128,7 @@ body {
   overflow: hidden;
   animation: scrollBannerhigh 2.5s ease-in;
 }
-.item-4 {
-  border-top: 1px solid black;
-  padding-top: 1vw;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-bottom: 1vw;
-  padding-bottom: 1.25vw;
-  font-size: 6.75vw;
-  flex-shrink: 1;
-  border-left: 1px solid black;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: scrollBannerhigh 2.6s ease-in;
-  background-color: white;
-}
 
-.item-5 {
-  text-align: end;
-  justify-content: end;
-  animation: scrollBannerhigh 2s ease-in;
-  background-color: white;
-}
-.item-5:hover {
-  background-color: rgb(141, 233, 113);
-  font-size: 7vw;
-  filter: drop-shadow(10 10 10);
-}
 .item-1 {
   flex-grow: 1;
   display: flex;
@@ -182,11 +155,35 @@ body {
   font-size: 7vw;
   transition: transform 1s ease-in-out;
 }
-
+.item-4 {
+  border-top: 1px solid black;
+  padding-top: 1vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 1vw;
+  padding-bottom: 1.25vw;
+  font-size: 6.75vw;
+  flex-shrink: 1;
+  border-left: 1px solid black;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scrollBannerhigh 2.6s ease-in;
+  background-color: white;
+}
 .item-4:hover {
   background-color: rgb(141, 233, 113);
   font-size: 7vw;
   transition: transform 0.5s ease-in;
+}
+.item-5 {
+  text-align: end;
+  justify-content: end;
+  animation: scrollBannerhigh 2s ease-in;
+  background-color: white;
+}
+.item-5:hover {
+  background-color: rgb(141, 233, 113);
+  font-size: 7vw;
 }
 
 .subitem-1 {
@@ -195,11 +192,11 @@ body {
 .subitem-1:hover {
   background-color: rgb(141, 233, 113);
 }
+
 .subitem-2 {
   text-align: end;
   height: fit-content;
 }
-
 .subitem-2:hover {
   background-color: rgb(141, 233, 113);
 }
@@ -213,6 +210,7 @@ body {
   background-color: white;
   transition: font-size 0.3s ease-out;
 }
+
 .child:hover {
   background-color: rgb(141, 233, 113);
   font-size: 3.7vw;
@@ -282,14 +280,6 @@ body {
   width: 8vw;
 }
 
-@keyframes rotateCircle {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .footchildmini-1 {
   animation: scrollBannerhigh 1s ease-in;
   transition: font-size 0.3s ease-out;
