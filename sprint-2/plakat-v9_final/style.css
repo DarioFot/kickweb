@@ -32,13 +32,12 @@ body {
   height: 100%;
   object-fit: cover; /* Bild proportional im Container füllen */
   object-position: center; /* Bild im Container zentrieren */
-  z-index:0;
+  z-index: 0;
 }
 
-
 ::selection {
-  color: #DB0034;
-  background-color: transparent
+  color: #db0034;
+  background-color: transparent;
 }
 
 @keyframes scrollBannerhigh {
@@ -54,7 +53,6 @@ body {
   100% {
     transform: translateY(0%);
   }
-  
 }
 
 @keyframes scrollBanner {
@@ -90,7 +88,6 @@ body {
   white-space: nowrap;
   font-family: Posterfont;
   padding: 1rem;
-
 }
 
 .container1 {
@@ -108,7 +105,7 @@ body {
 
 .item {
   writing-mode: sideways-rl;
-  transition: font-size 0.3s ease-out;;
+  transition: font-size 0.3s ease-out;
 }
 
 .item-2,
@@ -130,7 +127,7 @@ body {
 .item-3 {
   white-space: nowrap;
   overflow: hidden;
-  animation: scrollBannerhigh 2.5s ease-in ;
+  animation: scrollBannerhigh 2.5s ease-in;
 }
 .item-4 {
   border-top: 1px solid black;
@@ -144,7 +141,7 @@ body {
   border-left: 1px solid black;
   white-space: nowrap;
   overflow: hidden;
-  animation: scrollBannerhigh 2.6s ease-in ;
+  animation: scrollBannerhigh 2.6s ease-in;
   background-color: white;
 }
 
@@ -155,10 +152,9 @@ body {
   background-color: white;
 }
 .item-5:hover {
-  background-color:rgb(141, 233, 113);
+  background-color: rgb(141, 233, 113);
   font-size: 7vw;
   filter: drop-shadow(10 10 10);
-
 }
 .item-1 {
   flex-grow: 1;
@@ -172,7 +168,7 @@ body {
   padding-right: 1rem;
 }
 .item-2:hover {
-  background-color:rgb(141, 233, 113);
+  background-color: rgb(141, 233, 113);
   font-size: 7vw;
   transition: transform 1s ease-in-out;
 }
@@ -182,23 +178,22 @@ body {
   justify-content: end;
 }
 .item-3:hover {
- background-color:rgb(141, 233, 113);
- font-size: 7vw;
- transition: transform 1s ease-in-out;
+  background-color: rgb(141, 233, 113);
+  font-size: 7vw;
+  transition: transform 1s ease-in-out;
 }
 
 .item-4:hover {
- background-color:rgb(141, 233, 113);
- font-size: 7vw;
- transition: transform 0.5s ease-in;
+  background-color: rgb(141, 233, 113);
+  font-size: 7vw;
+  transition: transform 0.5s ease-in;
 }
 
 .subitem-1 {
   height: fit-content;
 }
 .subitem-1:hover {
- background-color:rgb(141, 233, 113);
-
+  background-color: rgb(141, 233, 113);
 }
 .subitem-2 {
   text-align: end;
@@ -206,7 +201,7 @@ body {
 }
 
 .subitem-2:hover {
- background-color:rgb(141, 233, 113);
+  background-color: rgb(141, 233, 113);
 }
 
 .child {
@@ -217,21 +212,18 @@ body {
   overflow: hidden;
   background-color: white;
   transition: font-size 0.3s ease-out;
-
 }
 .child:hover {
   background-color: rgb(141, 233, 113);
   font-size: 3.7vw;
   transition: 0s;
-
 }
 
 .child-1 {
   min-height: 10%;
   animation: scrollBanner 1.9s ease-in;
-  transition: font-size 0.3s ease-out
+  transition: font-size 0.3s ease-out;
 }
-
 
 .child-2 {
   min-height: 10%;
@@ -244,7 +236,7 @@ body {
   min-height: 80%;
   background-color: white;
   animation: scrollBanner 2.4s ease-in;
-  position: relative;
+  /* position: relative; */
   border-bottom: 1px solid black;
 }
 
@@ -264,7 +256,6 @@ body {
   font-size: 1vw;
   min-height: 30%;
   background-color: white;
-
 }
 
 .footchild {
@@ -279,8 +270,8 @@ body {
   flex-direction: row;
   padding-top: 1rem;
   background-color: white;
-  transition: font-size 0.3s ease-out}
-  
+  transition: font-size 0.3s ease-out;
+}
 
 .footchildmini-1 {
   flex-direction: column;
@@ -292,8 +283,6 @@ body {
   width: 8vw;
 }
 
-
-
 @keyframes rotateCircle {
   from {
     transform: rotate(0deg);
@@ -304,7 +293,7 @@ body {
 }
 .footchildmini-1 {
   animation: scrollBannerhigh 1s ease-in;
-  transition: font-size 0.3s ease-out
+  transition: font-size 0.3s ease-out;
 }
 
 .footchildmini-2 {
@@ -314,15 +303,13 @@ body {
   padding-bottom: 1vw;
   justify-content: space-between;
   animation: scrollBannerhigh 1.2s ease-in;
-
 }
 
 .footchildmini-3 {
   writing-mode: sideways-rl;
   font-size: 0.7vw;
   padding-right: 1vw;
-  animation: scrollBannerhigh 1.4s ease-in ;
-
+  animation: scrollBannerhigh 1.4s ease-in;
 }
 
 .footchildmini-3 {
@@ -353,21 +340,22 @@ body {
 }
 
 .footchildmini-1:hover {
-  background-color:rgb(141, 233, 113);
+  background-color: rgb(141, 233, 113);
   font-size: 1.1vw;
 }
 .footchildmini-2:hover {
-  background-color:rgb(141, 233, 113);
+  background-color: rgb(141, 233, 113);
   font-size: 1.1vw;
 }
 .footchildmini-3:hover {
-  background-color:rgb(141, 233, 113);
+  background-color: rgb(141, 233, 113);
   font-size: 0.9vw;
 }
 .footchildmini-4:hover {
-  background-color:rgb(141, 233, 113);
+  background-color: rgb(141, 233, 113);
   font-size: 0.75vw;
 }
 
 .footchildsmall:hover {
-  background-color:rgb(141, 233, 113);}
+  background-color: rgb(141, 233, 113);
+}

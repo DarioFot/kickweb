@@ -25,7 +25,6 @@ body {
   100% {
     transform: translateY(0%);
   }
-  
 }
 
 @keyframes scrollBanner {
@@ -43,10 +42,9 @@ body {
   }
 }
 
-
 ::selection {
-  color: #DB0034;
-  background-color: transparent
+  color: #db0034;
+  background-color: transparent;
 }
 
 .plakat {
@@ -72,7 +70,6 @@ body {
   align-content: center;
   min-height: 100%;
   background-color: gray;
-  
 }
 
 .item {
@@ -97,7 +94,7 @@ body {
 .item-3 {
   white-space: nowrap;
   overflow: hidden;
-  animation: scrollBannerhigh 2.5s ease-in ;
+  animation: scrollBannerhigh 2.5s ease-in;
 }
 .item-4 {
   border-top: 1px solid black;
@@ -111,7 +108,7 @@ body {
   border-left: 1px solid black;
   white-space: nowrap;
   overflow: hidden;
-  animation: scrollBannerhigh 2.6s ease-in ;
+  animation: scrollBannerhigh 2.6s ease-in;
   background-color: white;
 }
 .item-5 {
@@ -130,10 +127,9 @@ body {
   background-color: white;
 }
 .item-5:hover {
-  background-color:rgb(141, 233, 113);
+  background-color: rgb(141, 233, 113);
   font-size: 7vw;
   transition: transform 0.5s ease-in;
- 
 }
 .item-1 {
   flex-grow: 1;
@@ -145,10 +141,9 @@ body {
   display: flex;
   justify-content: space-between;
   padding-right: 1rem;
-
 }
 .item-2:hover {
-  background-color:rgb(141, 233, 113);
+  background-color: rgb(141, 233, 113);
   font-size: 7vw;
   transition: transform 1s ease-in-out;
 }
@@ -158,30 +153,29 @@ body {
   justify-content: end;
 }
 .item-3:hover {
- background-color:rgb(141, 233, 113);
- font-size: 7vw;
- transition: transform 1s ease-in-out;
+  background-color: rgb(141, 233, 113);
+  font-size: 7vw;
+  transition: transform 1s ease-in-out;
 }
 
 .item-4:hover {
- background-color:rgb(141, 233, 113);
- font-size: 7vw;
- transition: transform 0.5s ease-in;
+  background-color: rgb(141, 233, 113);
+  font-size: 7vw;
+  transition: transform 0.5s ease-in;
 }
 .subitem-1 {
   height: fit-content;
 }
 
 .subitem-1:hover {
- background-color:rgb(141, 233, 113);
-
+  background-color: rgb(141, 233, 113);
 }
 .subitem-2 {
   text-align: end;
   height: fit-content;
 }
 .subitem-2:hover {
- background-color:rgb(141, 233, 113);
+  background-color: rgb(141, 233, 113);
 }
 .child {
   writing-mode: horizontal-tb;
@@ -190,20 +184,17 @@ body {
   border-top: 1px solid black;
   overflow: hidden;
   background-color: white;
-
 }
 .child:hover {
   background-color: rgb(141, 233, 113);
   font-size: 3.7vw;
   transition: transform 0.5s ease-in;
-
 }
 
 .child-1 {
   min-height: 10%;
   animation: scrollBanner 1.9s ease-in;
 }
-
 
 .child-2 {
   min-height: 10%;
@@ -219,7 +210,7 @@ body {
   overflow: hidden;
 }
 .child-3:hover {
-  opacity: (10%)
+  opacity: (10%);
 }
 .pfeil {
   margin-top: 2vw;
@@ -229,7 +220,6 @@ body {
 }
 svg:hover {
   transform: rotate(1360deg);
-  
 }
 .footer {
   display: flex;
@@ -239,7 +229,7 @@ svg:hover {
   border-top: 1px solid black;
   font-size: 1vw;
   min-height: 30%;
-  animation: scrollBannerhigh 2s ease-in ;
+  animation: scrollBannerhigh 2s ease-in;
   background-color: white;
 }
 
@@ -252,7 +242,8 @@ svg:hover {
   display: flex;
   flex-grow: 1;
   flex-direction: row;
-  padding-top: 1rem;}
+  padding-top: 1rem;
+}
 
 .footchildmini-1 {
   flex-direction: column;
@@ -261,7 +252,7 @@ svg:hover {
 .kreis {
   margin-top: 1.5vw;
   width: 8vw;
-  transition: transform .7s linear;
+  transition: transform 0.7s linear;
 }
 
 .kreis:active {
@@ -313,7 +304,9 @@ svg:hover {
 }
 
 .footchildmini:hover {
-  color:rgb(141, 233, 113);}
+  color: rgb(141, 233, 113);
+}
 
 .footchildsmall:hover {
- color:rgb(141, 233, 113);}
+  color: rgb(141, 233, 113);
+}

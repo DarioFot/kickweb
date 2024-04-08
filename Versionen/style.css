@@ -33,10 +33,9 @@ body {
   object-position: center; /* Bild im Container zentrieren */
 }
 
-
 ::selection {
-  color: #DB0034;
-  background-color: transparent
+  color: #db0034;
+  background-color: transparent;
 }
 
 @keyframes scrollBannerhigh {
@@ -52,7 +51,6 @@ body {
   100% {
     transform: translateY(0%);
   }
-  
 }
 
 @keyframes scrollBanner {
@@ -86,7 +84,6 @@ body {
   align-items: left;
   white-space: nowrap;
   font-family: Posterfont;
-
 }
 
 .container1 {
@@ -113,10 +110,10 @@ body {
   border-bottom: 1px solid black;
   display: flex;
   justify-content: space-between;
-  background-color: white; 
+  background-color: white;
 }
-.item:hover{
-  background-color:rgb(141, 233, 113);
+.item:hover {
+  background-color: rgb(141, 233, 113);
   font-size: 7vw;
   transition: transform 1s ease-in-out;
 }
@@ -126,15 +123,12 @@ body {
   border-left: none;
   padding-right: 1rem;
   animation: scrollBannerhigh 1.9s ease-in;
-
 }
 .item-3 {
   animation: scrollBannerhigh 2s ease-in;
-
 }
 .item-4 {
   animation: scrollBannerhigh 2.4s ease-in;
-
 }
 
 .item-5 {
@@ -154,13 +148,25 @@ body {
   animation: scrollBannerhigh 2.4s ease-in;
 }
 
-.subitem-1,.subitem-3, .subitem-5, .subitem-7, .subitem-9, .subitem-11, .subitem-13, .subitem-15 {
+.subitem-1,
+.subitem-3,
+.subitem-5,
+.subitem-7,
+.subitem-9,
+.subitem-11,
+.subitem-13,
+.subitem-15 {
   height: fit-content;
-  writing-mode:horizontal-tb;
-
+  writing-mode: horizontal-tb;
 }
 
-.subitem-2,.subitem-4, .subitem-6, .subitem-8, .subitem-10, .subitem-12, .subitem-14 {
+.subitem-2,
+.subitem-4,
+.subitem-6,
+.subitem-8,
+.subitem-10,
+.subitem-12,
+.subitem-14 {
   text-align: end;
   height: fit-content;
   text-align: center;
@@ -176,15 +182,12 @@ body {
   overflow: hidden;
   background-color: white;
   transition: font-size 0.3s ease-out;
-
 }
 .child:hover {
   background-color: rgb(141, 233, 113);
   font-size: 3.7vw;
   transition: 0s;
-
 }
-
 
 .footer {
   display: flex;
