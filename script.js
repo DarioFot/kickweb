@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
     customCursor.innerHTML = ""; // Cursor zurücksetzen
   });
 
-  //zoomeffect Hover child-3 GEHT IN KOMBI MIT BILDANIMATION NICHT
+  //zoomeffect Hover child-3 «GEHT IN KOMBI MIT BILDANIMATION NICHT»
   /*const child3 = document.querySelector(".child-3");
 
   child3.addEventListener("mouseover", function () {
