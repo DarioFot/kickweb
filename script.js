@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
       pfeil.style.transition = "block";
     }, 400);
-    //darioImage.style.display = "none"; // Bild ausblenden
     darioImage.style.transform = "translateX(100%)"; // Bild ausblenden
     pfeil.style.transition = "transform 0.5s ease-in-out";
     pfeil.style.transform = "translateX(0)";

@@ -104,7 +104,7 @@ body {
 }
 
 .item {
-  writing-mode: sideways-rl;
+  writing-mode: sideways-rl; /*Präsi*/
   transition: font-size 0.3s ease-out; /*Präsi Effekt*/
 }
 
